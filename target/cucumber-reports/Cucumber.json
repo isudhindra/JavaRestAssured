@@ -1,0 +1,314 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Validate find by status rest endpoint and get the count of pet name doggie",
+        "description": "",
+        "id": "find-pets-count-from-pet-store;validate-find-by-status-rest-endpoint-and-get-the-count-of-pet-name-doggie",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1888481490,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I want execute findByStatus endpoint with \u0027available\u0027 status",
+            "match": {
+              "arguments": [
+                {
+                  "val": "available",
+                  "offset": 43
+                }
+              ],
+              "location": "CommonDefinitions.the_swagger_findByStatus_api_is_available(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6553985,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I want to verify request response code as \u0027200\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "PetEndpointStepDefinitions.the_request_response_has_the_correct_response_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 873664042,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I want to verify response and count the list of pets with key \u0027name\u0027 as \u0027doggie\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 63
+                },
+                {
+                  "val": "doggie",
+                  "offset": 73
+                }
+              ],
+              "location": "PetEndpointStepDefinitions.the_pet_requests_response_contains_petname(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Validate find by status rest endpoint and get the count of pet name doggie when rest api not available",
+        "description": "",
+        "id": "find-pets-count-from-pet-store;validate-find-by-status-rest-endpoint-and-get-the-count-of-pet-name-doggie-when-rest-api-not-available",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30171697,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I want execute findByStatus endpoint is not available for \u0027available\u0027 status",
+            "match": {
+              "arguments": [
+                {
+                  "val": "available",
+                  "offset": 59
+                }
+              ],
+              "location": "CommonDefinitions.the_swagger_findByStatus_api_is_not_available(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5996999,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I want to verify request response code as \u0027200\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "PetEndpointStepDefinitions.the_request_response_has_the_correct_response_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 102080876,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I want to verify response and count the list of pets with key \u0027name\u0027 as \u0027doggie\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 63
+                },
+                {
+                  "val": "doggie",
+                  "offset": 73
+                }
+              ],
+              "location": "PetEndpointStepDefinitions.the_pet_requests_response_contains_petname(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Validate find by status rest endpoint and get the count of pet name doggie",
+        "description": "",
+        "id": "find-pets-count-from-pet-store;validate-find-by-status-rest-endpoint-and-get-the-count-of-pet-name-doggie;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 484665380,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I want execute findByStatus endpoint with \u0027pending\u0027 status",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pending",
+                  "offset": 43
+                }
+              ],
+              "location": "CommonDefinitions.the_swagger_findByStatus_api_is_available(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1998190,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I want to verify request response code as \u0027200\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "PetEndpointStepDefinitions.the_request_response_has_the_correct_response_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 137996247,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I want to verify response and count the list of pets with key \u0027name\u0027 as \u0027doggie\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 63
+                },
+                {
+                  "val": "doggie",
+                  "offset": 73
+                }
+              ],
+              "location": "PetEndpointStepDefinitions.the_pet_requests_response_contains_petname(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Validate find by status rest endpoint and get the count of pet name doggie",
+        "description": "",
+        "id": "find-pets-count-from-pet-store;validate-find-by-status-rest-endpoint-and-get-the-count-of-pet-name-doggie;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 475120591,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I want execute findByStatus endpoint with \u0027sold\u0027 status",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sold",
+                  "offset": 43
+                }
+              ],
+              "location": "CommonDefinitions.the_swagger_findByStatus_api_is_available(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2809239,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I want to verify request response code as \u0027200\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "PetEndpointStepDefinitions.the_request_response_has_the_correct_response_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 114836563,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I want to verify response and count the list of pets with key \u0027name\u0027 as \u0027doggie\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 63
+                },
+                {
+                  "val": "doggie",
+                  "offset": 73
+                }
+              ],
+              "location": "PetEndpointStepDefinitions.the_pet_requests_response_contains_petname(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Find pets count from pet store",
+    "description": "This feature includes tests that test the pet RESTFul services for find by status",
+    "id": "find-pets-count-from-pet-store",
+    "keyword": "Feature",
+    "uri": "searchByPet.feature"
+  }
+]
