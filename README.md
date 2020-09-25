@@ -1,4 +1,4 @@
-Swagger Petstore API Tests (Cucumber - Rest Assured) -Sudhindra Immidi for Master card API test
+Swagger Petstore API Tests (Cucumber - Rest Assured)
 ======================================
 This is automation suite is designed to test the Swagger Pet store to search the pet available.
 
@@ -17,5 +17,3 @@ You will need:
 
 **Detailed logs can be retrieved from logs/automation.log after the test execution.
 
-
-I haven't concentrated much on HTML reporting and didn't have much time with wiremock so couldn't do it.
